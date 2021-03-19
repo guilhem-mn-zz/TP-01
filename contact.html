@@ -19,16 +19,16 @@
     <fieldset>
         <legend>Nous contacter</legend>
         <form method="POST" action="">
-            <input type="text" name="nom" placeholder="Nom" required>
-            <input type="text" name="prenom" placeholder="Prénom" required>
-            <input type="email" name="mail" placeholder="E-mail" required>
-            <input type="number" name="tel" placeholder="Téléphone" required>
+            <input type="text" minlength="4" name="nom" placeholder="Nom" required>
+            <input type="text" minlength="4" name="prenom" placeholder="Prénom" required>
+            <input type="email" minlength="4" name="mail" placeholder="E-mail" required>
+            <input type="number" minlength="4" name="tel" placeholder="Téléphone" required>
             <select>
                 <option>E-mail</option>
                 <option>Téléphone</option>
             </select>
       
-            <input type="text" name="message" placeholder="message">
+            <textarea maxlength="200" name="message" placeholder="message">
       
             <input type="submit">
         </form>
